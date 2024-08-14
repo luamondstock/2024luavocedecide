@@ -52,9 +52,16 @@ let atual = 0;
 let perguntaAtual;
 
 function mostraPergunta(){
-    perguntaAtual = 
-
+    perguntaAtual = perguntas[atual]
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+    mostraPergunta();
 }
+
+function mostraAlternativa()
+    perguntaAtual = perguntas[atual]
+   
+
+
 
 
 

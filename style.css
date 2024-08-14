@@ -1,12 +1,17 @@
-*{
-    margin:0:
-     
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Playwrite+NL:wght@100..400&display=swap');
 
-:root{
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+:root {
 --azul-marinho: #03045eff;
---azulceu: #0077b6ff;
+--azul-ceu: #0077b6ff;
 --azul-mar: #00b4d8ff;
 --azul-bebe: #90e0efff;
---ciano-claro: #caf0f8ff;
-
+--cian-claro: #caf0f8ff;
+--fonte-titulo: "Playwrite NL", cursive;
+--fonte-texto: "Playwrite FR Moderne", cursive;
 }
