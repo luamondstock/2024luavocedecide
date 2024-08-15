@@ -20,15 +20,21 @@ body{
   background-color: var(--azul-marinho);
   color: var(--azul-mar);
   display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: var(--fonte-texto);
 }
 
 .caixa-principal{
     background-color: var(--azul-bebe);
     width: 90%;
-    max-width:
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
 }
 
 .titulo{
     color: var(--cian-claro);
-    font-family: var(--fonte-titulo)
+    font-family: var(--fonte-titulo);
 }

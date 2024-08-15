@@ -17,7 +17,6 @@ const perguntas = [
             afirmaçao:"afirmaçao02"
            }
         ]
-
     },
     {
         enunciado: "texto02",
@@ -31,7 +30,6 @@ const perguntas = [
                 afirmaçao:"afirmaçao04"
             }
         ]
-
     },
     {
         enunciado: "texto03",
@@ -45,7 +43,6 @@ const perguntas = [
                 afirmaçao:"afirmaçao06"
             }
         ]
-
     },
     {
         enunciado: "texto04",
@@ -59,7 +56,6 @@ const perguntas = [
                 afirmaçao:"afirmaçao08"
             }
         ]
-
     },
     {
         enunciado: "texto05",
@@ -73,9 +69,7 @@ const perguntas = [
                 afirmaçao:"afirmaçao10"
             }
         ]
-
-    },
-    
+    },  
 ]
 
 let atual = 0;
@@ -87,19 +81,21 @@ function mostraPergunta(){
     mostraAlternativas();
 }
 
-function mostraAlternativas()
+function mostraAlternativas(){
     for (const alternativa of perguntaAtual.alternativas){
         const botaoAlternativas = document.createElement("button");
         botaoAlternativas.textContent = alternativa.texto;
         botaoAlternativas.addEventListener("click", function(){
             atual++;
-            mostraPergunta();
+            caixaAlternativas.appendChild(botaoAlternativas)
+
         })
 
         caixaAlternativas.appendChild(botaoAlternativas)
 
     }
-   
+}   
+mostraPergunta();
 
 
 
