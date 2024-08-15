@@ -15,3 +15,20 @@
 --fonte-titulo: "Playwrite NL", cursive;
 --fonte-texto: "Playwrite FR Moderne", cursive;
 }
+
+body{
+  background-color: var(--azul-marinho);
+  color: var(--azul-mar);
+  display: flex;
+}
+
+.caixa-principal{
+    background-color: var(--azul-bebe);
+    width: 90%;
+    max-width:
+}
+
+.titulo{
+    color: var(--cian-claro);
+    font-family: var(--fonte-titulo)
+}
