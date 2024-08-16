@@ -6,24 +6,24 @@ const textoResultado = document.querySelector('.texto-resultado');
 
 const perguntas = [
     {
-        enunciado: " texto",
+        enunciado: "Você é um jovem que teve oportunidade de estudar o idioma de inglês ainda na adolescência. Aos 17 anos, com o certificado de Ingles nas mãos, voce tem que decidir entre: ",
         alternativas: [
             {
-                texto:" alternativa01",
-                afirmacao: "resultado 01"
+                texto:"Continuar morando na sua cidade natal, com pouca possibilidade de deselvonvimento na língua inglesa. ",
+                afirmacao: "Escolha mais segura, seus pais concordam com você e te apoiam nessa decisão. "
             },
             {
-                texto:" alternativa02 ",
-                afirmacao: "resultado 02"
+                texto:"Fazer um intercâmbio com ajuda remunerada de sua familia para o seu inicio no novo país.",
+                afirmacao: "Maravilha, mesmo ainda sendo novo escolheu se desafiar e se tornar ainda mais fluente."
             }   
         ]
     },
     {
-        enunciado: "Enunciado 02",
+        enunciado: "Um ano depois você se encontra meio triste com sua escolha. O que fazer agora?",
         alternativas: [
             {
-                texto: "alternativa 03",
-                afirmacao: "resultado03"
+                texto: "Continuar na mesma função que está e não mudar nada.",
+                afirmacao: "Que pena, se arriscar as vezes é bom."
             },
             {
                 texto: "alternativa 04",
@@ -98,13 +98,13 @@ function mostrarAlternativas(){
 
 function respostaSelecionada(opcaoSelecionada){
     const afirmacoes = opcaoSelecionada.afirmacao;
-    historiaFinal += afirmacoes + " ";
+    historiaFinal += afirmacoes + " ok";
     atual++;
     mostrarPerguntas();
 }
 
 function mostraResultado(){
-    caixaPerguntas.textContent = " Inicio do texto... "
+    caixaPerguntas.textContent = " Inicio do texto.vsdefrighrgih.. "
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
