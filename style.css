@@ -1,17 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Playwrite+NL:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bahianita&family=Londrina+Solid:wght@100;300;400;900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
-    font-weight: 400;
 }
 
-:root {
---azul-marinho: #03045eff;
---azul-ceu: #0077b6ff;
---azul-mar: #00b4d8ff;
---azul-bebe: #90e0efff;
---cian-claro: #caf0f8ff;
---fonte-titulo: "Playwrite NL", cursive;
---fonte-texto: "Playwrite FR Moderne", cursive;
+:root{
+
+--branco: #f1faeeff;
+--azul-claro: #a8dadcff;
+--azul: #457b9dff;
+--marinho: #1d3557ff;
+--fonte-texto:"Bahianita", sans-serif;
+--fonte-titulo: "Londrina Solid", sans-serif;
+}
+
+body{
+    background-color: var(--marinho);
+    color: var(--azul);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: var(--fonte-texto)
+}
+
+.caixa-principal{
+    background-color: var(--azul-claro);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+}
+
+.titulo{
+    color: var(--azul);
+    font-family: var(--marinho)
+}
+
+button{
+    background-color:var(--branco);
+    color: var(--marinho);
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    transition: 0.3s;
+    margin: 10px auto;
+}
+
+button:hover{
+    background-color: var(--azul);
 }
